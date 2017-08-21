@@ -24,7 +24,7 @@ $router->map( 'GET', '/', function() {
 
 $router->map( 'GET', '/api', function() {
     header('Content-Type: application/json; charset=utf-8');
-    Api::searchByLocale('osasco');
+    Api::searchWeatherByLocale('osasco');
 });
 
 

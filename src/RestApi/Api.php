@@ -7,8 +7,8 @@ use RestApi\AbstractApi;
 
 class Api extends AbstractApi {
 
-    public function searchByLocale($locale){
-        $allLocales = file_get_contents("./base/locales.json");
+    public function searchWeatherByLocale($locale){
+        $allLocales = file_get_contents("./base/weather.json");
         echo $allLocales;
     }
 
