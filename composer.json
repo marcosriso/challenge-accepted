@@ -1,0 +1,19 @@
+{
+    "name": "mriso/test",
+    "description": "A simple test chalenge",
+    "authors": [
+        {
+            "name": "Marcos Riso",
+            "email": "mrphp7@gmail.com"
+        }
+    ],
+    "require": {
+        "altorouter/altorouter": "1.1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "RestApi": "src/",
+            "Domain": "src/"
+        }
+    }
+}
