@@ -8,7 +8,6 @@
         vm.getWeatherbyLocaleID = function(id, callback){
             $http.get("/api/"+id)
             .then(function(response) {
-                console.log(response);
                 callback(response.data);
             });
         }

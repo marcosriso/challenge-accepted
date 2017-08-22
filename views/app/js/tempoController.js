@@ -12,7 +12,7 @@
         }
 
         var callback = function(data){
-            console.log(data);
+            vm.data = data;
         }
 
         function init(){

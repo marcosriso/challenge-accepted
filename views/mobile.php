@@ -5,7 +5,7 @@
         <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="views/app/css/app.css">
     </head>
-    <body ng-app="climatempo">
+    <body ng-app="climatempo" ng-controller="tempoController as tp">
         <nav class="nav">
             <a href="/"><img src="views/app/images/logo-white.png" class="responsive" /></a>
         </nav>
@@ -19,8 +19,11 @@
             </div>
         </section>
 
-        <section class="container" ng-controller="tempoController">
+        <section class="container">
             <h1>Previsão para Osasco - SP</h1>
+
+{{ tp.data }}
+
 
             <div class="container-info">
                 <div class="head-info">
