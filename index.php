@@ -22,9 +22,10 @@ $router->map( 'GET', '/', function() {
     require __DIR__ . '/views/mobile.php';
 });
 
-$router->map( 'GET', '/api', function() {
+$router->map( 'GET', '/api/[i:id]', function($id) {
     header('Content-Type: application/json; charset=utf-8');
-    Api::searchWeatherByLocale('osasco');
+    $api = new Api();
+    $api->searchWeatherByLocale($id);
 });
 
 
