@@ -25,7 +25,20 @@ $router->map( 'GET', '/', function() {
 $router->map( 'GET', '/api/[i:id]', function($id) {
     header('Content-Type: application/json; charset=utf-8');
     $api = new Api();
-    $api->searchWeatherByLocale($id);
+    $api->searchWeatherByLocaleID($id);
+});
+
+$router->map( 'POST', '/api', function() {
+    header('Content-Type: application/json; charset=utf-8');
+    $name = addslashes($_POST['name']);
+    $api = new Api();
+    $api->searchWeatherByLocaleName($name);
+});
+
+$router->map( 'GET', '/api/locales', function() {
+    header('Content-Type: application/json; charset=utf-8');
+    $api = new Api();
+    $api->getAllLocales();
 });
 
 

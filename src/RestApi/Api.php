@@ -1,13 +1,16 @@
 <?php
-
+/**
+* Rest API by @mriso_dev
+* Neste pequeno exemplo podemos ver conceitos de Orientação à Objetos
+*
+*/
 namespace RestApi;
 
-use Domain\Locale;
 use RestApi\AbstractApi;
 
 class Api extends AbstractApi {
 
-    public function searchWeatherByLocale($locale){
+    public function searchWeatherByLocaleID($locale){
         $allweather = json_decode(file_get_contents("./base/weather.json"));
         $filtered = [];
         foreach($allweather as $weather) {
@@ -19,16 +22,16 @@ class Api extends AbstractApi {
         echo $this->toJson($filtered);
     }
 
-    public function serchLocaleByName($locale){
-        $alllocales = json_decode(file_get_contents("./base/locales.json"));
+    public function searchWeatherByLocaleName($name){
+        $allweather = json_decode(file_get_contents("./base/weather.json"));
         $filtered = [];
-        foreach($alllocales as $loc) {
-            if(strtolower($loc->name) == strtolower($locale['name'])){
-                $filtered[] = $loc;
+        foreach($allweather as $weather) {
+            if(strtolower($weather->locale->name) == strtolower($name)){
+                $filtered[] = $weather;
             }
         }
 
-        return $filtered;
+        echo $this->toJson($filtered);
     }
 
     public function getAllLocales(){

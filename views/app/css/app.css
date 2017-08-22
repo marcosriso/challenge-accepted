@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Encode Sans', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin-bottom: 22px;
+}
+
+.nav {
+    margin: auto;
+    text-align: center;
+    height: 80px;
+    padding: 12px;
+    background-color: #1565c0;
+}
+
+img.responsive {
+  max-height: 100%;
+  max-width: 100%;
+} 
+
+.search-container {
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+input.search {
+    display: inline-block;
+    border-radius: 20px;
+    padding-left: 12px;
+    font-size: 24px;
+    font-color: #cccccc;
+    height: 50px;
+    width: 82%;
+    border: 2px solid #cccccc;
+}
+
+.search-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.date {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.half-body {
+    float: left;
+    width: 45%;
+    margin-bottom: 8px;
+    margin-top:8px;
+}
+
+
+.body-info {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+
+.container-info {
+    background-color: #dbdbdb;
+    padding: 12px;
+    border-radius: 12px;
+    float: left;
+    margin-right: 6px;
+    margin-bottom:6px;
+
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(97,97,97,1);
+    -moz-box-shadow: 2px 2px 3px 0px rgba(97,97,97,1);
+    box-shadow: 2px 2px 3px 0px rgba(97,97,97,1);
+}
+
+.max {
+    color: #1565c0;
+    font-size: 30px;
+    padding: 4px;
+}
+
+.min {
+    color: red;
+    font-size: 30px;
+    padding: 4px;
+}
+
+.black {
+    color: black;
+    font-size: 30px;
+    padding: 4px;
+}
+
+@media screen and (min-width: 1125px) {
+
+    .container {
+        margin: auto;
+        width: 80%;
+    }
+
+    .container-info {
+        width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 660px) and (max-width: 1124px) { 
+
+    .container {
+        margin: auto;
+        width: 90%;
+    }
+
+    .container-info {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 659px) {
+
+    .container {
+        margin: auto;
+        width: 96%;
+    }
+
+    .container-info {
+        width: 94%;
+    }
+}
