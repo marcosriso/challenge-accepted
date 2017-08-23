@@ -35,7 +35,7 @@ class Api extends AbstractApi {
     }
 
     public function getAllLocales(){
-        return file_get_contents("./base/locales.json");
+        echo file_get_contents("./base/locales.json");
     }
 
 
