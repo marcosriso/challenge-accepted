@@ -6,6 +6,8 @@
 *   Utilizei poucos componentes prontos e nenhum framework visando uma demonstração técnica.
 *   Exceções foram o AltoRouter na REST API e o AngularJS no Frontend.
 *
+*   No HTML5 e no CSS não utilizei Bootstrap mas criei na mão um modelo responsivo.
+*
 *   Pretendia utilizar o GULP para minificar os JS e o node para subir o frontend em um serviço 
 *   distinto, mas o tempo estava muito curto para mim recentemente.
 *

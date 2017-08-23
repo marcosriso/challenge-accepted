@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Climatempo</title>
@@ -14,7 +15,7 @@
             <div class="search-container">
                 <form>
                     <input class="search" ng-model="tp.searchdata" enter-key="tp.getWeatherbyLocaleName()" placeholder="Busca por Localidade">
-                    <img src="views/app/images/icons/search.png" class="search-icon" />
+                    <a href="#" ng-click="tp.getWeatherbyLocaleName()"><img src="views/app/images/icons/search.png" class="search-icon" /></a>
                 </form>
             </div>
         </section>
