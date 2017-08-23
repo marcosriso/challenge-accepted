@@ -12,6 +12,13 @@
             });
         }
 
+        vm.getWeatherbyLocaleName = function(name, callback){
+            $http.post('/api', name).
+            then(function(response, status, headers, config) {
+               callback(response.data);
+            });
+        }
+
     }]);
 
 })();

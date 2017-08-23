@@ -34,6 +34,7 @@ img.responsive {
 .search-container {
     margin-top: 26px;
     margin-bottom: 26px;
+    text-align: center;
 }
 
 input.search {
@@ -78,8 +79,9 @@ input.search {
     padding: 12px;
     border-radius: 12px;
     float: left;
-    margin-right: 6px;
-    margin-bottom:6px;
+    position: relative;
+    margin-right: 12px;
+    margin-bottom:12px;
 
     -webkit-box-shadow: 2px 2px 3px 0px rgba(97,97,97,1);
     -moz-box-shadow: 2px 2px 3px 0px rgba(97,97,97,1);
@@ -88,23 +90,31 @@ input.search {
 
 .max {
     color: #1565c0;
-    font-size: 30px;
+    font-size: 26px;
     padding: 4px;
 }
 
 .min {
     color: red;
-    font-size: 30px;
+    font-size: 26px;
     padding: 4px;
 }
 
 .black {
     color: black;
-    font-size: 30px;
+    font-size: 26px;
     padding: 4px;
 }
 
-@media screen and (min-width: 1125px) {
+.head-info {
+    height: 100px;
+}
+
+.center-header {
+    text-align: center;
+}
+
+@media screen and (min-width: 1140px) {
 
     .container {
         margin: auto;
@@ -112,12 +122,12 @@ input.search {
     }
 
     .container-info {
-        width: 30%;
+        width: 29%;
     }
 
 }
 
-@media screen and (min-width: 660px) and (max-width: 1124px) { 
+@media screen and (min-width: 680px) and (max-width: 1139px) { 
 
     .container {
         margin: auto;
@@ -125,7 +135,7 @@ input.search {
     }
 
     .container-info {
-        width: 45%;
+        width: 44%;
     }
 }
 
