@@ -7,37 +7,6 @@
 ___
 
 
-## Processo de recrutamento
-
-Olá desenvolvedor, pronto para participar do nosso
-processo de recrutamento para vaga de Full-stack (CLT)?
-
-### Sobre a Vaga
-
-- Empresa: Climatempo
-- Cargo: Desenvolvedor Full-stack (CLT);
-- VR e VT;
-- Home Office após período de experiência;
-- Flexibilidade no horário de trabalho para acompanhar eventos de técnologia;
-- Local: Parque Tecnológico - São José dos Campos (http://www.pqtec.org.br/).
-
-
-### Requisitos
-
-Requisitos para a vaga, bons conhecimentos em:
-
-- HTML
-- CSS
-- Javascript
-- NodeJS
-- PHP
-- SQL
-- NoSQL
-- RESTful
-
-IMPORTANTE:
-
-- Residir em Jacarei, Caçapava, Taubaté ou São José dos Campos
 
 
 ### O Desafio
@@ -133,8 +102,6 @@ O processo do desafio deve ser:
 3. Crie um **PROJECT.md** com a explicação de como devemos executar o projeto e com o máximo de detalhes possível do que foi feito.
 
 4. Após concluir faça um pull request.
-
-5. Envie um e-mail para fullstack@climatempo.com.br com seu **curriculo, pretensão salarial e o link do seu pull request**.
 
 
 ___
